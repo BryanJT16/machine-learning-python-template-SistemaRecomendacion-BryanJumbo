@@ -42,7 +42,7 @@ sex = st.selectbox("Sexo", ("Male", "Female"))
 native_country = st.selectbox("País de Origen", ["United-States", "Cambodia", "England", "Puerto-Rico", "Canada", "Germany", "Outlying-US(Guam-USVI-etc)", "India", "Japan", "Greece", "South", "China", "Cuba", "Iran", "Honduras", "Philippines", "Italy", "Poland", "Jamaica", "Vietnam", "Mexico", "Portugal", "Ireland", "France", "Dominican-Republic", "Laos", "Ecuador", "Taiwan", "Haiti", "Columbia", "Hungary", "Guatemala", "Nicaragua", "Scotland", "Thailand", "Yugoslavia", "El-Salvador", "Trinadad&Tobago", "Peru", "Hong", "Holand-Netherlands"])
 
 
-df_mapping = pd.read_csv("src/education_mapping.csv")
+df_mapping = pd.read_csv("education_mapping.csv")
 education_dict = dict(zip(df_mapping["education"], df_mapping["education-num"]))
 
 
