@@ -4,7 +4,7 @@ from pickle import load
 
 st.title("Ingresos futuros según la Data")
 
-model = load(open("models/modelo_recomendacion.sav", "rb"))
+model = load(open("src/modelo_recomendacion.sav", "rb"))
 
 age = st.slider("Edad", min_value=0, max_value=100, value=25)
 education = st.selectbox(
